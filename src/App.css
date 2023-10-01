@@ -13,6 +13,10 @@
   }
 }
 
+body{
+  position: relative;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -40,4 +44,66 @@
 li:hover {
   background-color: grey;
   color: red;
+}
+
+#login{
+  /* box-sizing: border-box; */
+  position: relative;
+  top: 100px;
+  left: 500px; 
+  height: 400px;
+  width: 400px;
+  display: block;
+  justify-content: center;
+  text-align: left;
+  border: 3px solid rgb(172, 172, 183);
+  border-radius: 5px;
+  background-color: #a5abac;
+}
+
+ @media screen {
+  #login{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    left: auto;
+  }
+}
+
+ @media (width>=1000px) {
+  #login{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    right: calc(35%);
+    top: 10rem;
+  }
+} 
+
+h2{
+  text-align: center;
+  font-weight: bold;
+}
+
+/* .gradient-custom-3 { */
+/* fallback for old browsers */
+/* background: #84fab0; */
+
+/* Chrome 10-25, Safari 5.1-6 */
+/* background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5)); */
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5)) */
+/* } */
+.gradient-custom-4 {
+/* fallback for old browsers */
+background: #84fab0;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
 }
